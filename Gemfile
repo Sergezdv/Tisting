@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+gem 'haml-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,9 +9,16 @@ gem 'rails', '3.2.8'
 #gem 'sqlite3'
 
 gem 'pg', '~> 0.14.1'
+
+
+gem "therubyracer"
+gem "less-rails"
+gem "less-rails-bootstrap", "~> 2.2.0"
+gem "twitter-bootstrap-rails", "~> 2.1.6"
+
 gem "devise", "~> 2.1.2"
 
-gem "twitter-bootstrap-rails", "~> 2.1.6"
+
 
 
 # Gems used only for assets and not required

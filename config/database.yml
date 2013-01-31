@@ -2,19 +2,19 @@ login: &login
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  username: testing1
-  password: 'qwe123'
+  username: serges
+  password: '123456'
   host: localhost
   port: 5432
 
 development:
   <<: *login
-  database: bdtesting1_development
+  database: sergedb_development
 
 test:
   <<: *login
-  database: bdtesting1_test
+  database: sergedb_test
 
 production:
   <<: *login
-  dtabase: bdtesting1_prodaction
+  dtabase: sergedb_production
