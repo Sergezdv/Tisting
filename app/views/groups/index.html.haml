@@ -1,14 +1,15 @@
-%h1 Listing categories
--#!!!
--#%html
--#  %head
--#    %title Testing
--#    = stylesheet_link_tag    "application", :media => "all"
--#    = javascript_include_tag "application"
--#    = csrf_meta_tags
--#  %body
--#    = yield
+%h1 Listing groups
+
+- @groups.each do |group|
+  |
+  = link_to group.name, group_path(:id => group.id)#, :class => "category", "data-id" => group.id
+
+-#.i_modal_window{:style => "display: none;"}
+-#  %div
+-#    %p
+-#    = image_tag "#", :id => "rand_pict"
+
+.clear
 
 
-%h1
-  djffhfhkng
+
