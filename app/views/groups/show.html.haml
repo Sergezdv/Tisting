@@ -7,3 +7,15 @@
 = link_to 'Edit', edit_group_path(@group)
 \|
 = link_to 'Back', groups_path
+
+
+%h1 #{@group.name}
+= will_paginate @pictures
+- @question.each do |quest|
+  %div{:style => "float:left; width: 130px; height: 150px; padding: 10px; text-align: center; font-size: 12px"}
+    = "Question: #{quest.questions.count.to_i} "
+    %br
+    = "Answer: #{quest.answers_count.to_i}"
+    = link_to question_path(:id => question.id) do
+      = image_tag img.image.with_border.url
+.clear
